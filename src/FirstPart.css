@@ -234,6 +234,11 @@
     border-radius: 5px;
 }
 
+.star-container {
+    position: relative;
+    aspect-ratio: 1;
+}
+
 .star-container:hover {
     filter: drop-shadow(0 0 10px #FFEE57)
 }
