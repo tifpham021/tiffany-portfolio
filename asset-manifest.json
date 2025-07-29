@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/tiffany-portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/tiffany-portfolio/static/js/main.fce50e47.js",
+    "main.css": "/tiffany-portfolio/static/css/main.f66eea0f.css",
+    "main.js": "/tiffany-portfolio/static/js/main.a8967ad5.js",
     "static/js/453.95b4110a.chunk.js": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js",
-    "static/media/logo.svg": "/tiffany-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/firstpage-background.png": "/tiffany-portfolio/static/media/firstpage-background.6d0ba6f6ee38f956948f.png",
+    "static/media/gemini.png": "/tiffany-portfolio/static/media/gemini.2f364df33fe4b92ed9e2.png",
+    "static/media/constell2.png": "/tiffany-portfolio/static/media/constell2.1004400230e01a2d3350.png",
+    "static/media/right-outer.png": "/tiffany-portfolio/static/media/right-outer.f3b1f9c4a07b7e49f983.png",
+    "static/media/constell1.png": "/tiffany-portfolio/static/media/constell1.3c08c2b77eeb78d86b40.png",
+    "static/media/left-outer.png": "/tiffany-portfolio/static/media/left-outer.4d3d60dd0cd441a3697f.png",
+    "static/media/bottom-left-outer.png": "/tiffany-portfolio/static/media/bottom-left-outer.6db59732221558806231.png",
     "index.html": "/tiffany-portfolio/index.html",
-    "main.f855e6bc.css.map": "/tiffany-portfolio/static/css/main.f855e6bc.css.map",
-    "main.fce50e47.js.map": "/tiffany-portfolio/static/js/main.fce50e47.js.map",
+    "main.f66eea0f.css.map": "/tiffany-portfolio/static/css/main.f66eea0f.css.map",
+    "main.a8967ad5.js.map": "/tiffany-portfolio/static/js/main.a8967ad5.js.map",
     "453.95b4110a.chunk.js.map": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.fce50e47.js"
+    "static/css/main.f66eea0f.css",
+    "static/js/main.a8967ad5.js"
   ]
 }
