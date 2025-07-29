@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes backwardOrbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes swing {
+    0% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+
+.all-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../public/images/firstpage-background.png");
+}
+
+.moonFigure {
+  top: 0;
+  justify-content: flex-start;
+}
+
+.circles {
+  position: relative;
+}
+
+.middle-circle {
+  background-color: rgba(255, 255, 255, 0.051);
+  border-radius: 50%;
+  height: 340px;
+  width: 340px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.name h1 {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 700;
+  font-size: 6rem;
+  margin: 5px;
+}
+
+/* inner circle planet orbit */
+
+.inner-circle {
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.204) solid 1px;
+  padding: 75px;
+  position: relative;
+}
+
+.inner-planets {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation: orbit 15s linear infinite;
+  transform-origin: center;
+}
+
+.planet1,
+.planet2,
+.purple,
+.light-blue {
+  position: absolute;
+}
+
+.planet1 {
+  top: -5%;
+  left: 50%;
+  transform: translateX(-80%);
+}
+
+.planet2 {
+  bottom: 3%;
+  left: 75%;
+  transform: translateX(0%, -5%);
+}
+
+.purple {
+  width: 30px;
+  height: 30px;
+  background-color: #8d31ef;
+  border-radius: 50%;
+  filter: blur(6px);
+  left: 89%;
+  top: 20%;
+}
+
+.light-blue {
+  width: 40px;
+  height: 40px;
+  background-color: #9adcff;
+  border-radius: 50%;
+  filter: blur(9px);
+  left: 3%;
+  top: 70%;
+}
+
+/* outer circle planet orbit */
+
+.outer-circle {
+  border-radius: 50%;
+  border: rgba(255, 255, 255, 0.204) solid 1px;
+  padding: 80px;
+  position: relative;
+}
+
+.outer-planets {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    animation: backwardOrbit 15s linear infinite;
+    transform-origin: center;
+}
+
+.planet3,
+.planet4,
+.planet5,
+.white-planet,
+.pink-planet,
+.small-white-planet {
+  position: absolute;
+}
+
+.planet3 {
+  top: 0;
+  left: 0;
+  transform: translate(10%, 40%);
+}
+
+.planet4 {
+  top: 30%;
+  right: 0;
+  transform: translate(40%);
+}
+
+.planet5 {
+  top: 80%;
+  left: 0%;
+  transform: translate(90%, 0%);
+}
+
+.white-planet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.752);
+  filter: blur(6px);
+  top: 0;
+  left: 0;
+  transform: translate(1000%, -50%);
+}
+
+.pink-planet {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffabf1b3;
+  filter: blur(6px);
+  bottom: 0;
+  right: 0;
+  transform: translate(-100%, -120%);
+}
+
+.small-white-planet {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.865);
+  filter: blur(6px);
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%);
+}
+
+/* extra stuff on page */
+.moonFigure {
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.swing-container {
+    position: absolute;
+    top: 10%;
+    left: 17.5%;
+    transform-origin: top center;
+    animation: swing 2s ease-in-out infinite;
+}
+
+.string {
+    background-color: #D9D9D9;
+    height: 330px;
+    width: 6px;
+    border-radius: 5px;
+}
+
+.star-container:hover {
+    filter: drop-shadow(0 0 10px #FFEE57)
+}
+
+.star {
+    width: 160px;
+    margin-top: -3px;
+    margin-left: -76px;
+}
+
+.star-text {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+    font-family: 'IBM Plex Mono', sans-serif;
+    transform: translate(-45%, -45%);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(78, 77, 77);
+}
+
+.top-constell {
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 14%
+}
+
+.bottom-constell {
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+    width: 15%;
+}
+
+.gemini {
+    position: absolute;
+    right: 0;
+    top: 40%
+}
+
+.gemini:hover, .top-constell:hover, .bottom-constell:hover {
+    filter: drop-shadow(0 0 15px #FFEE57)
+}
