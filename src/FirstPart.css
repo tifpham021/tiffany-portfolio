@@ -36,6 +36,7 @@
   align-items: center;
   height: 100vh;
   background-image: url("../public/images/firstpage-background.png");
+  overflow: hidden;
 }
 
 .moonFigure {
