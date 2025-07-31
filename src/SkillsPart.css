@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes beam {
+    0% {
+      transform: rotate(3deg) translateY(0px);
+    }
+    50% {
+      transform: rotate(-3deg) translateY(-10px);
+    }
+    100% {
+      transform: rotate(3deg) translateY(0px);
+    }
+  }
+
+.skills-content {
+  height: 48vh;
+  background-image: url("../public/images/skillspage.png");
+  transition: height 1s ease;
+  overflow: hidden;
+}
+
+.click-btn {
+  background-color: #483c82;
+  border: none;
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  color: white;
+  border-radius: 25px;
+  padding: 15px;
+  font-size: 1.3rem;
+  box-shadow: 1px 3px 2px #1a162f;
+  margin: 25px 40px;
+}
+
+.click-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 1px 4px 4px #141122;
+}
+
+.click-btn:active {
+  transform: scale(0.98);
+  box-shadow: 1px 4px 3px #19162a;
+}
+
+.below-button {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: -5%;
+}
+
+.without-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.below-button h1 {
+    color: white;
+    align-self: center;
+    font-size: 8rem;
+    font-family: "IBM Plex Mono", serif;
+}
+
+.spaceship {
+    height: 370px;
+    animation: float 2.4s ease-in-out infinite;
+    transition: transform 3.7s ease;
+}
+
+.spaceship-wrapper {
+    position: relative;
+    transition: transform 0.6s ease;
+}
+.spaceship-inner {
+    transition: transform 0.6s ease;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+/* expanded part */
+.skills-expanded {
+  height: 110vh;
+  flex-direction: row;
+}
+
+.hidden {
+    display: block;
+}
+
+.shrink {
+    transform: scale(0.9);
+}
+
+.beam-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  transform: translate(-15%, -22%);
+}
+
+.beam {
+    height: 680px;
+    width: 800px;
+    right: -28%;
+    animation: beam 2s ease-in-out infinite;
+    transform-origin: center center;
+    z-index: 5;
+}
+
+.without-img {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.skill-types {
+    background-color: #090836;
+    border-radius: 30px;
+    padding: 47px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-top: -20px;
+}
+
+.frontend {
+    background-color: #43597B;
+    color: white;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 25px;
+    font-family: 'IBM Plex Mono', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-shadow: 1px 6px 6px #1e2635;
+}
+
+.frontend:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 6px 6px #181f2b;
+}
+
+.frontend:active {
+    transform: scale(0.98);
+    background-color: #354660;
+}
+
+.backend {
+    background-color: #544277;
+    color: white;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 25px;
+    font-family: 'IBM Plex Mono', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-shadow: 1px 6px 6px #352a4d;
+}
+
+.backend:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 6px 6px #181f2b;
+}
+
+.backend:active {
+    transform: scale(0.98);
+    background-color: #3c2f54;
+}
+
+.etc {
+    background-color: #603369;
+    color: white;
+    border: none;
+    padding: 18px 20px;
+    border-radius: 25px;
+    font-family: 'IBM Plex Mono', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    box-shadow: 1px 6px 6px #45254b;
+}
+
+.etc:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 6px 6px #181f2b;
+}
+
+.etc:active {
+    transform: scale(0.98);
+    background-color: #422348;
+}
+
+
+/* icon boxes */
+
+.skill-icons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.frontend-icons, .backend-icons, .etc-icons {
+  position: absolute;
+  z-index: 20;
+  margin-left: 200px;
+}
+
+.two-icons {
+  display: flex;
+  gap: 15%;
+}
+
+.two-icons p {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+
+.icon-set-svelte {
+  justify-self: center;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
