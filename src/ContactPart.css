@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
+
+
+
+.contact-content {
+    height: 110vh;
+    background-image: url('../public/images/contact.png');
+    display: flex ;
+}
+
+.contact-content h2 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 5.5rem;
+    margin: 40px;
+}
+
+/* left side */
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-star {
+    width: 50%;
+    align-self: center;
+    filter: drop-shadow(0 0 15px #FFEE57)
+}
+
+.middle-star {
+    align-self: center;
+    filter: drop-shadow(0 0 6px #dfd152a6)
+}
+
+.bottom-star {
+    width: 40%;
+    align-self: flex-end;
+    filter: drop-shadow(0 0 15px #FFEE57)
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.contact-icons img {
+    height: 70px;
+    width: 75px;
+    background-color: rgba(255, 255, 255, 0.313);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+
+/* right side */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form {
+    position: relative;
+}
+
+.contact-text {
+    position: absolute;
+    z-index: 20;
+    color: white;
+    top: 15%;
+    left: 5%;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.planet {
+    filter: drop-shadow(0 0 25px #1e2bc1)
+}
+
+.group {
+    display: flex;
+    margin: 35px;
+    gap: 20px;
+}
+
+.name-group {
+    margin-left: 70px;
+}
+
+.name-input {
+    max-width: 340px;
+}
+
+.message-input {
+    max-width: 350px;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.492);
+    border: none;
+    border-radius: 30px;
+    font-size: 2.5rem;
+    padding: 10px;
+    justify-self: center;
+}
+
+.launch {
+    border: none;
+    color: white;
+    background-color: #466290;
+    font-family: 'IBM Plex Mono';
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 30px;
+    width: 20%;
+    box-shadow: 1px 4px 4px #1e2a3e;
+    align-self: center;
+}
+
+.launch:hover {
+    transform: translateY(2px);
+    box-shadow: 1px 4px 7px #2f405c;
+}
+
+.launch:active {
+    background-color: #3a5177;
+    transform: scale(0.98);
+    box-shadow: 1px 6px 4px #1e2a3e;
+}

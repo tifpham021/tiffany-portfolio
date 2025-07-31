@@ -29,11 +29,10 @@ const AboutPart = () => {
       return () => observer.disconnect();
     }, []);
     return (
-      <div
-        className={`about-content ${expanded ? "expanded" : ""}`}
-        onClick={handleClick}
-      >
-        <button onClick={handleClick}>CLICK</button>
+      <div className={`about-content ${expanded ? "expanded" : ""}`}>
+        <button onClick={handleClick} className="about-btn">
+          {expanded ? "CLOSE" : "CLICK"}
+        </button>
         <div className="no-button" ref={cometRef}>
           <img
             src={comet1}
