@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/tiffany-portfolio/static/css/main.4e37597f.css",
-    "main.js": "/tiffany-portfolio/static/js/main.525e98f5.js",
+    "main.css": "/tiffany-portfolio/static/css/main.cd5a3ab2.css",
+    "main.js": "/tiffany-portfolio/static/js/main.e6816288.js",
     "static/js/453.95b4110a.chunk.js": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js",
     "static/media/poketrade.png": "/tiffany-portfolio/static/media/poketrade.90ae42e4d15fadab7d81.png",
     "static/media/firstpage-background.png": "/tiffany-portfolio/static/media/firstpage-background.6d0ba6f6ee38f956948f.png",
+    "static/media/contact.png": "/tiffany-portfolio/static/media/contact.ba63644827828c286000.png",
     "static/media/projectpage.png": "/tiffany-portfolio/static/media/projectpage.a3fdba7834ae57f9d562.png",
     "static/media/beam.png": "/tiffany-portfolio/static/media/beam.230d69a2a183949f97f4.png",
+    "static/media/planet.png": "/tiffany-portfolio/static/media/planet.b445f223d8c95a5828ef.png",
     "static/media/helmet.png": "/tiffany-portfolio/static/media/helmet.4ff8a5b2a899f52aea2a.png",
     "static/media/cometRight.png": "/tiffany-portfolio/static/media/cometRight.4ed99bf1a1db73da8c42.png",
     "static/media/gemini.png": "/tiffany-portfolio/static/media/gemini.2f364df33fe4b92ed9e2.png",
     "static/media/skillspage.png": "/tiffany-portfolio/static/media/skillspage.339a833494a427385a1f.png",
+    "static/media/middle-star.png": "/tiffany-portfolio/static/media/middle-star.2e6e8fc17ec3dd395cf6.png",
     "static/media/aboutpage.png": "/tiffany-portfolio/static/media/aboutpage.41a6aae16aa50e7c0e02.png",
     "static/media/cometLeft.png": "/tiffany-portfolio/static/media/cometLeft.88168caf3c4a7b341c2f.png",
     "static/media/constell2.png": "/tiffany-portfolio/static/media/constell2.1004400230e01a2d3350.png",
@@ -19,13 +22,15 @@
     "static/media/constell1.png": "/tiffany-portfolio/static/media/constell1.3c08c2b77eeb78d86b40.png",
     "static/media/left-outer.png": "/tiffany-portfolio/static/media/left-outer.4d3d60dd0cd441a3697f.png",
     "static/media/bottom-left-outer.png": "/tiffany-portfolio/static/media/bottom-left-outer.6db59732221558806231.png",
+    "static/media/top-star.png": "/tiffany-portfolio/static/media/top-star.617d3ed2d03ccdd3aaf1.png",
+    "static/media/bottom-star.png": "/tiffany-portfolio/static/media/bottom-star.0060afd647b4e50fdc2a.png",
     "index.html": "/tiffany-portfolio/index.html",
-    "main.4e37597f.css.map": "/tiffany-portfolio/static/css/main.4e37597f.css.map",
-    "main.525e98f5.js.map": "/tiffany-portfolio/static/js/main.525e98f5.js.map",
+    "main.cd5a3ab2.css.map": "/tiffany-portfolio/static/css/main.cd5a3ab2.css.map",
+    "main.e6816288.js.map": "/tiffany-portfolio/static/js/main.e6816288.js.map",
     "453.95b4110a.chunk.js.map": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e37597f.css",
-    "static/js/main.525e98f5.js"
+    "static/css/main.cd5a3ab2.css",
+    "static/js/main.e6816288.js"
   ]
 }
