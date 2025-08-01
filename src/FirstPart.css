@@ -288,3 +288,63 @@
 .gemini:hover, .top-constell:hover, .bottom-constell:hover {
     filter: drop-shadow(0 0 15px #FFEE57)
 }
+
+/* iPad pro screens */
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .all-content {
+    height: 72vh;
+  }
+
+  .swing-container {
+      top: 10%;
+      left: 26%;
+  }
+
+  .circles {
+    margin-top: 10%;
+  }
+
+  .gemini {
+    margin-top: -30%;
+  }
+
+  .bottom-constell {
+    display: none;
+  }
+
+  .string {
+    height: 720px;
+  }
+
+  .name h1 {
+    font-size: 4.3rem;
+  }
+
+  .inner-circle {
+    padding: 55px;
+  }
+
+  .outer-circle {
+    padding: 70px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .swing-container {
+      top: 10%;
+      left: 19.5%;
+  }
+
+  .name h1 {
+    font-size: 4.5rem;
+  }
+
+  .inner-circle {
+    padding: 55px;
+  }
+
+  .outer-circle {
+    padding: 70px;
+  }
+}
