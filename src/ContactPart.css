@@ -1,9 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
 
+@keyframes topStar{
+    0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
 
+  }
+}
 
+@keyframes star {
+  0% {
+    transform: rotate(6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(6deg);
+
+  }
+}
+
+@keyframes planet {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+
+  }
+}
 .contact-content {
-    height: 110vh;
+    height: 100vh;
     background-image: url('../public/images/contact.png');
     display: flex ;
 }
@@ -23,21 +59,33 @@
     flex-direction: column;
 }
 
+.stars {
+    margin: 10% -10% 10% 0%;
+    display: flex;
+    flex-direction: column;
+}
+
 .top-star {
     width: 50%;
     align-self: center;
-    filter: drop-shadow(0 0 15px #FFEE57)
+    filter: drop-shadow(0 0 15px #FFEE57);
+    animation: topStar 3s ease-in-out infinite;
+    
 }
 
 .middle-star {
     align-self: center;
-    filter: drop-shadow(0 0 6px #dfd152a6)
+    filter: drop-shadow(0 0 6px #dfd152a6);
+    margin-top: -5%;
+    margin-bottom: -20%;
+    animation: star 2s ease-in-out infinite;
 }
 
 .bottom-star {
     width: 40%;
     align-self: flex-end;
-    filter: drop-shadow(0 0 15px #FFEE57)
+    filter: drop-shadow(0 0 15px #FFEE57);
+    animation: topStar 2.5s ease-in-out infinite;
 }
 
 .contact-icons {
@@ -52,19 +100,32 @@
     background-color: rgba(255, 255, 255, 0.313);
     border-radius: 30px;
     padding: 20px;
+    box-shadow: 1px 4px 4px rgb(33, 32, 32);
 }
 
+.contact-icons img:hover {
+    filter: drop-shadow(0 0 20px #535469);
+    transform: translateY(2px);
+    box-shadow: 1px 4px 4px rgb(0, 0, 0);
+}
+
+.contact-icons img:active {
+    transform: scale(0.98);
+    box-shadow: 1px 4px 4px rgb(33, 32, 32);
+}
 
 /* right side */
 .right-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
 .form {
     position: relative;
+    animation: planet 3s ease-in-out infinite;
 }
 
 .contact-text {
@@ -80,11 +141,16 @@
     flex-direction: column;
     font-family: 'IBM Plex Mono';
     font-weight: 700;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    align-content: center;
+    margin: 0 auto;
 }
 
 .planet {
-    filter: drop-shadow(0 0 25px #1e2bc1)
+    display: block;
+    filter: drop-shadow(0 0 25px #1e2bc1);
+    width: 95%;
+    margin: 0 auto;
 }
 
 .group {
@@ -93,25 +159,22 @@
     gap: 20px;
 }
 
-.name-group {
-    margin-left: 70px;
-}
-
-.name-input {
-    max-width: 340px;
-}
-
-.message-input {
-    max-width: 350px;
+.name-group, .message-group {
+    margin-left: 15%;
 }
 
 input {
     background-color: rgba(255, 255, 255, 0.492);
     border: none;
     border-radius: 30px;
-    font-size: 2.5rem;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
     justify-self: center;
+    width: 350px;
+}
+
+label {
+    margin-top: 2%;
 }
 
 .launch {

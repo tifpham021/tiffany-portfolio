@@ -7,13 +7,13 @@ import ContactPart from './ContactPart';
 
 function App() {
   return (
-    <div className="portfolio">
+    <>
       <FirstPart />
       <AboutPart />
       <ProjectDisplay />
       <SkillsPart />
       <ContactPart />
-    </div>
+    </>
   );
 }
 

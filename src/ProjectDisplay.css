@@ -40,8 +40,19 @@
     border: none;
     border-radius: 40px;
     padding: 20px;
-    box-shadow: 1px 4px 4px rgb(46, 45, 45);
+    box-shadow: 2px 4px 4px rgb(46, 45, 45);
 }
+
+.left-btn:hover, .right-btn:hover {
+    box-shadow: 2px 5px 4px rgb(9, 9, 9);
+    transform: translateY(2px);
+}
+
+.left-btn:active, .right-btn:active {
+    box-shadow: 2px 4px 4px rgb(46, 45, 45);
+    transform: scale(0.98);
+}
+
 
 .launch-btn {
     border: none;
@@ -52,7 +63,17 @@
     background-color: #fa5d5d8a;
     padding: 20px 25px;
     font-size: 1.7rem;
-    box-shadow: 1px 4px 4px #351616c5;
+    box-shadow: 2px 4px 4px #351616c5;
+}
+
+.launch-btn:hover {
+    box-shadow: 2px 5px 4px #230f0fc5;
+    transform: translateY(2px);
+}
+
+.launch-btn:active {
+    box-shadow: 2px 5px 4px #351616c5;
+    transform: scale(0.98);
 }
 
 .arrow {

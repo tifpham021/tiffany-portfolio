@@ -23,11 +23,13 @@ const FirstPart = () => {
           <div className="swing-container">
             <div className="string"></div>
             <div className="star-container">
-              <img src={star} className="star" alt="star" />
-              <p className="star-text">
-                CONTACT <br />
-                ME
-              </p>
+              <a href="#contact">
+                <img src={star} className="star" alt="star" />
+                <p className="star-text">
+                  CONTACT <br />
+                  ME
+                </p>
+              </a>
             </div>
           </div>
         </div>
