@@ -228,6 +228,7 @@
 .backend-icons {
   margin-top: 10%;
 }
+
 .etc-icons {
   margin-top: -30%;
 }
@@ -248,4 +249,215 @@
   color: white;
   text-align: center;
   font-weight: 700;
+}
+
+
+/* iPad pro screens */
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+  .skills-content {
+    position: relative;
+    height: 55vh;
+  }
+  
+  .below-button {
+    flex-direction: column;
+    margin-top: 0%;
+  }
+
+  .below-button h1 {
+    justify-self: center;
+  }
+
+  .spaceship {
+    margin-top: -10%;
+  }
+
+  .click-btn {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .skills-expanded {
+    height: 95vh;
+  }
+
+  .skills-expanded h1 {
+    display: none;
+  }
+
+  .skills-expanded .spaceship-wrapper {
+    margin-top: 12%;
+  }
+
+  .beam-wrapper {
+    margin-left: 25%;
+  }
+
+  .beam {
+    height: 720px;
+  }
+
+  .skill-icons {
+    margin-left: 19%;
+    margin-top: -15%;
+  }
+
+  .frontend, .backend, .etc {
+    font-size: 1.6rem;
+  }
+
+  .two-icons p, .icon-set-svelte p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .below-button {
+    margin-top: -2%;
+  }
+
+  .two-icons p,.icon-set-svelte p {
+    font-size: 1.2rem;
+  }
+}
+
+/* iPad screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .skills-content {
+      height: 68vh;
+      position: relative;
+    }
+
+  .below-button {
+    gap: 0;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .below-button h1 {
+    font-size: 7rem;
+    justify-self: center;
+  }
+
+  .spaceship {
+    width: 95%;
+  }
+
+  .click-btn {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .skills-expanded {
+    height: 165vh;
+  }
+
+  .skills-expanded .below-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .skills-expanded h1 {
+    display: none;
+  }
+
+  .skills-expanded .spaceship-wrapper {
+    margin-top: 0%;
+    width: 60%;
+    margin-left: 18%;
+  }
+
+  .beam-wrapper {
+    margin-left: 0%;
+  }
+
+  .beam {
+    height: 750px;
+  }
+
+  .skill-icons {
+    margin-left: 0%;
+    margin-top: -25%;
+  }
+
+  .frontend, .backend, .etc {
+    font-size: 1.6rem;
+  }
+
+  .two-icons p, .icon-set-svelte p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .skills-content {
+      position: relative;
+      height: 42vh;
+    }
+
+  .below-button {
+    gap: 0;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 5%;
+  }
+
+  .below-button h1 {
+    font-size: 6.5rem;
+    justify-self: center;
+  }
+
+  .spaceship {
+    width: 85%;
+    height: 300px;
+  }
+
+  .click-btn {
+    position: absolute;
+    z-index: 10;
+  }
+
+  .skills-expanded {
+    height: 120vh;
+  }
+
+  .skills-expanded .below-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .skills-expanded h1 {
+    display: none;
+  }
+
+  .skills-expanded .spaceship-wrapper {
+    margin-top: 0%;
+    width: 60%;
+    margin-left: 18%;
+  }
+
+  .beam-wrapper {
+    margin-left: -25%;
+  }
+
+  .beam {
+    height: 750px;
+  }
+
+  .skill-icons {
+    margin-left: -20%;
+    margin-top: -35%;
+  }
+
+  .frontend, .backend, .etc {
+    font-size: 1.6rem;
+  }
+
+  .two-icons p, .icon-set-svelte p {
+    font-size: 1.3rem;
+  }
+
 }

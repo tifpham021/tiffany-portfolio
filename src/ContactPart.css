@@ -39,7 +39,7 @@
   }
 }
 .contact-content {
-    height: 100vh;
+    height: 110vh;
     background-image: url('../public/images/contact.png');
     display: flex ;
 }
@@ -143,7 +143,7 @@
     font-weight: 700;
     font-size: 2.2rem;
     align-content: center;
-    margin: 0 auto;
+    margin-top: -4%;
 }
 
 .planet {
@@ -157,6 +157,7 @@
     display: flex;
     margin: 35px;
     gap: 20px;
+    
 }
 
 .name-group, .message-group {
@@ -200,4 +201,118 @@ label {
     background-color: #3a5177;
     transform: scale(0.98);
     box-shadow: 1px 6px 4px #1e2a3e;
+}
+
+/* iPad pro screens */
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    .contact-content {
+        height: 80vh;
+        flex-direction: column-reverse;
+        gap: 10%;
+    }
+
+    .right-side {
+       transform: translateY(-5%);
+    }
+
+    .left-side {
+        transform: translateY(-40%);
+    }
+
+    .contact-icons img {
+        width: 90px;
+        height: auto;
+    }
+  
+    .stars {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .contact-content {
+    height: 90vh;
+  }
+  
+    .right-side {
+    margin-top: -5%;
+  }
+}
+
+/* iPad screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .contact-content {
+        height: 120vh;
+        flex-direction: column-reverse;
+        gap: 10%;
+    }
+
+    .planet {
+        width: 87%;
+    }
+
+    .right-side {
+       transform: translateY(-5%);
+    }
+
+    .left-side {
+        transform: translateY(-40%);
+    }
+
+    .contact-icons img {
+        width: 80px;
+        height: auto;
+        margin-top: -20%;
+    }
+  
+    .stars {
+        display: none;
+    }
+
+    input {
+        font-size: 1.3rem;
+        width: 300px;
+    }
+
+    label {
+        margin-top: 2%;
+    }
+
+    .form-content {
+        font-size: 2rem;
+        margin-top: -6%;
+        margin-left: 10%;
+    }
+
+    .launch {
+       margin-left: 10%;
+       padding-left: 5px;
+       padding: 20px;
+       width: 130px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .contact-content {
+        height: 110vh;
+        flex-direction: column-reverse;
+        gap: 10%;
+    }
+
+    .right-side {
+       transform: translateY(-5%);
+    }
+
+    .left-side {
+        transform: translateY(-40%);
+    }
+
+    .contact-icons img {
+        width: 90px;
+        height: auto;
+    }
+  
+    .stars {
+        display: none;
+    }
 }
