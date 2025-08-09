@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tiffany-portfolio/static/css/main.1799f019.css",
-    "main.js": "/tiffany-portfolio/static/js/main.8d845fc2.js",
+    "main.css": "/tiffany-portfolio/static/css/main.7f0e280e.css",
+    "main.js": "/tiffany-portfolio/static/js/main.9dbfdb4d.js",
     "static/js/453.95b4110a.chunk.js": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js",
     "static/media/poketrade.png": "/tiffany-portfolio/static/media/poketrade.90ae42e4d15fadab7d81.png",
     "static/media/firstpage-background.png": "/tiffany-portfolio/static/media/firstpage-background.6d0ba6f6ee38f956948f.png",
@@ -24,12 +24,12 @@
     "static/media/bottom-left-outer.png": "/tiffany-portfolio/static/media/bottom-left-outer.6db59732221558806231.png",
     "static/media/bottom-star.png": "/tiffany-portfolio/static/media/bottom-star.983b74280898aaac28d0.png",
     "index.html": "/tiffany-portfolio/index.html",
-    "main.1799f019.css.map": "/tiffany-portfolio/static/css/main.1799f019.css.map",
-    "main.8d845fc2.js.map": "/tiffany-portfolio/static/js/main.8d845fc2.js.map",
+    "main.7f0e280e.css.map": "/tiffany-portfolio/static/css/main.7f0e280e.css.map",
+    "main.9dbfdb4d.js.map": "/tiffany-portfolio/static/js/main.9dbfdb4d.js.map",
     "453.95b4110a.chunk.js.map": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1799f019.css",
-    "static/js/main.8d845fc2.js"
+    "static/css/main.7f0e280e.css",
+    "static/js/main.9dbfdb4d.js"
   ]
 }
