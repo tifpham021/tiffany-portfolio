@@ -44,17 +44,20 @@ const AboutPart = () => {
           />
           <div className="text">
             <h1>AB</h1>
-            <img src={helmet} alt="astronaut helmet" className="helmet" />
-            <p className={`${expanded ? "show-text" : "hide-text"}`}>
-              Hi, I’m Tiffany. <br />
-              I’m a CS student at Georgia Tech with a focused interest in
-              frontend development and UX design. I’m passionate about building
-              clean, responsive interfaces that are both visually compelling and
-              user-centered. <br />
-              <br />
-              I’m continuously refining my design and development skills through
-              hands-on projects. Feel free to explore some of my work below!
-            </p>
+            <div className="helmet-container">
+              <img src={helmet} alt="astronaut helmet" className="helmet" />
+              <p className={`${expanded ? "show-text" : "hide-text"}`}>
+                Hi, I’m Tiffany. <br />
+                I’m a CS student at Georgia Tech with a focused interest in
+                frontend development and UX design. I’m passionate about
+                building clean, responsive interfaces that are both visually
+                compelling and user-centered. <br />
+                <br />
+                I’m continuously refining my design and development skills
+                through hands-on projects. Feel free to explore some of my work
+                below!
+              </p>
+            </div>
             <h1>UT</h1>
           </div>
           <img

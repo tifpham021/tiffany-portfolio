@@ -12,13 +12,16 @@
     justify-content: center;
     align-items: center;
     gap: 7%;
+    flex-wrap: wrap;
 }
 
 .description {
     background-color: rgba(255, 255, 255, 0.166);
-    height: 530px;
+    height: 30px;
     width: 400px;
     text-align: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .project-img {
@@ -27,12 +30,17 @@
     background-color: rgba(255, 255, 255, 0.166);
     padding: 40px;
     align-self: center;
+    align-self: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     gap: 3%;
+    flex-wrap: wrap;
+    padding: 1rem 0;
 }
 
 .left-btn, .right-btn {
@@ -41,6 +49,8 @@
     border-radius: 40px;
     padding: 20px;
     box-shadow: 2px 4px 4px rgb(46, 45, 45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .left-btn:hover, .right-btn:hover {
@@ -64,6 +74,8 @@
     padding: 20px 25px;
     font-size: 1.7rem;
     box-shadow: 2px 4px 4px #351616c5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .launch-btn:hover {
@@ -80,65 +92,64 @@
     height: 40px;
 }
 
-/* iPad pro screens */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+/* Medium screens and below */
+@media (max-width: 900px) {
   .project-display {
-    height: 80vh;
+    height: auto;
   }
-  
+
   .top-part {
     flex-direction: column;
+    gap: 2rem;
   }
 
-  .description {
-    height: 200px;
-    width: 780px;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-    .project-display {
-        height: 90vh;
-    }
-}
-
-/* iPad screens */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .project-display {
-    height: 100vh;
-  }
-  
-  .top-part {
-    flex-direction: column;
-    
-  }
-
-  .description {
-    height: 200px;
-    width: 680px;
+  .description, .project-img {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
   }
 
   .project-img {
-        width: 80%;
-        height: auto;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .project-display {
-        height: 120vh;
-    }
-    .top-part {
-        flex-direction: column;
-    }
-
-  .description {
-    height: 200px;
-    width: 730px;
+    height: auto;
   }
 
-  .project-img {
-        width: 65%;
-        height: auto;
-    }
+  .left-btn, .right-btn {
+    padding: 15px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  .launch-btn {
+    font-size: 1.4rem;
+    padding: 15px 20px;
+  }
+
+  .arrow {
+    height: 30px;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 500px) {
+  .description, .project-img {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .left-btn, .right-btn {
+    padding: 12px;
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+  .launch-btn {
+    font-size: 1.2rem;
+    padding: 12px 18px;
+    white-space: normal;
+  }
+
+  .arrow {
+    height: 25px;
+  }
 }

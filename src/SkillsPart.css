@@ -42,6 +42,8 @@
   font-size: 1.3rem;
   box-shadow: 1px 3px 2px #1a162f;
   margin: 25px 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .click-btn:hover {
@@ -69,8 +71,9 @@
 .below-button h1 {
     color: white;
     align-self: center;
-    font-size: 8rem;
+    font-size: clamp(7rem, 8vw, 8rem);
     font-family: "IBM Plex Mono", serif;
+    text-align: center;
 }
 
 .spaceship {
@@ -108,8 +111,10 @@
 .beam-wrapper {
   position: absolute;
   width: 100%;
+  top: 40%;
+  left: 35%;
   z-index: 0;
-  transform: translate(-15%, -22%);
+  transform: translate(-50%, -22%);
 }
 
 .beam {
@@ -148,6 +153,8 @@
     font-weight: 700;
     font-size: 1.4rem;
     box-shadow: 1px 6px 6px #1e2635;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .frontend:hover {
@@ -171,6 +178,8 @@
     font-weight: 700;
     font-size: 1.4rem;
     box-shadow: 1px 6px 6px #352a4d;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .backend:hover {
@@ -194,6 +203,8 @@
     font-weight: 700;
     font-size: 1.4rem;
     box-shadow: 1px 6px 6px #45254b;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .etc:hover {
@@ -251,213 +262,146 @@
   font-weight: 700;
 }
 
-
-/* iPad pro screens */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+@media (max-width: 1100px) {
   .skills-content {
-    position: relative;
-    height: 55vh;
-  }
-  
-  .below-button {
+    height: auto;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
-    margin-top: 0%;
+    align-items: center;
+    height: 45vh;
   }
 
-  .below-button h1 {
-    justify-self: center;
+  .skills-expanded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh;
   }
 
-  .spaceship {
+  .skills-expanded .spaceship-wrapper {
+    max-width: 350px;
+    margin: 1rem auto 0 auto;
+  }
+
+  .click-btn {
+    align-self: flex-start;
+  }
+
+  .skills-expanded .below-button {
+    flex-direction: column;
     margin-top: -10%;
   }
 
-  .click-btn {
-    position: absolute;
-    z-index: 10;
-  }
-
-  .skills-expanded {
-    height: 95vh;
-  }
-
-  .skills-expanded h1 {
-    display: none;
-  }
-
-  .skills-expanded .spaceship-wrapper {
-    margin-top: 12%;
-  }
-
-  .beam-wrapper {
-    margin-left: 25%;
-  }
-
-  .beam {
-    height: 720px;
-  }
-
-  .skill-icons {
-    margin-left: 19%;
-    margin-top: -15%;
-  }
-
-  .frontend, .backend, .etc {
-    font-size: 1.6rem;
-  }
-
-  .two-icons p, .icon-set-svelte p {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  .below-button {
-    margin-top: -2%;
-  }
-
-  .two-icons p,.icon-set-svelte p {
-    font-size: 1.2rem;
-  }
-}
-
-/* iPad screens */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .skills-content {
-      height: 68vh;
-      position: relative;
-    }
-
-  .below-button {
-    gap: 0;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-
   .below-button h1 {
-    font-size: 7rem;
-    justify-self: center;
+    font-size: clamp(6rem, 7vw, 7rem);
+  }
+
+  .spaceship-wrapper {
+    max-width: 300px;
+    transform: none !important;
+    position: relative;
+    margin: 0 auto 0 auto;
   }
 
   .spaceship {
-    width: 95%;
+    width: 130%;
+    height: auto;
   }
 
-  .click-btn {
-    position: absolute;
-    z-index: 10;
+  .skill-types {
+    padding: 1rem;
+    gap: 2%;
   }
 
-  .skills-expanded {
-    height: 165vh;
-  }
-
-  .skills-expanded .below-button {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
-
-  .skills-expanded h1 {
-    display: none;
-  }
-
-  .skills-expanded .spaceship-wrapper {
-    margin-top: 0%;
-    width: 60%;
-    margin-left: 18%;
+  .skill-types button {
+    flex: 1 1 45%;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    min-width: 120px;
   }
 
   .beam-wrapper {
-    margin-left: 0%;
+    max-width: 600px;
+    transform: translate(-105%, -20%);
   }
 
   .beam {
-    height: 750px;
+    max-width: 800px;
   }
 
   .skill-icons {
-    margin-left: 0%;
+    left: -125px;
+    margin-top: -20%;
+    max-width: 600px;
+    transform: none;
+  }
+
+  .two-icons {
+    gap: 10%;
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 500px) {
+  .skills-content {
+    padding: 3rem 0rem;
+    height: 70vh;
+  }
+
+  .below-button {
+    flex-direction: column;
+  }
+
+  .skills-expanded {
+    height: 180vh;
+  }
+
+  .below-button h1 {
+    font-size: clamp(4.8rem, 6vw, 6rem);
+  }
+
+  .spaceship {
+    margin-top: -40%;
+    width: 150%;
+    height: auto;
+  }
+
+  .skills-expanded .spaceship {
+    margin-top: 0%;
+  }
+
+  .spaceship-wrapper {
+    max-width: 250px;
+    margin-top: 1rem;
+  }
+
+  .skill-types {
+    padding: 1rem 0.5rem;
+    gap: 1%;
+  }
+
+  .skill-types button {
+    flex: 1 1 100%;
+    font-size: clamp(0.9rem, 4vw, 1.1rem);
+    min-width: unset;
+  }
+
+  .beam-wrapper {
+    max-width: 450px;
+    transform: translate(-55%, -25%);
+  }
+
+  .beam {
+    max-width: 500px;
+  }
+
+  .skill-icons {
     margin-top: -25%;
+    max-width: 300px;
   }
 
-  .frontend, .backend, .etc {
-    font-size: 1.6rem;
+  .two-icons {
+    gap: 1rem;
   }
-
-  .two-icons p, .icon-set-svelte p {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .skills-content {
-      position: relative;
-      height: 42vh;
-    }
-
-  .below-button {
-    gap: 0;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: 5%;
-  }
-
-  .below-button h1 {
-    font-size: 6.5rem;
-    justify-self: center;
-  }
-
-  .spaceship {
-    width: 85%;
-    height: 300px;
-  }
-
-  .click-btn {
-    position: absolute;
-    z-index: 10;
-  }
-
-  .skills-expanded {
-    height: 120vh;
-  }
-
-  .skills-expanded .below-button {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-  }
-
-  .skills-expanded h1 {
-    display: none;
-  }
-
-  .skills-expanded .spaceship-wrapper {
-    margin-top: 0%;
-    width: 60%;
-    margin-left: 18%;
-  }
-
-  .beam-wrapper {
-    margin-left: -25%;
-  }
-
-  .beam {
-    height: 750px;
-  }
-
-  .skill-icons {
-    margin-left: -20%;
-    margin-top: -35%;
-  }
-
-  .frontend, .backend, .etc {
-    font-size: 1.6rem;
-  }
-
-  .two-icons p, .icon-set-svelte p {
-    font-size: 1.3rem;
-  }
-
 }

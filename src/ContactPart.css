@@ -134,6 +134,14 @@
     color: white;
     top: 15%;
     left: 5%;
+
+}
+
+.form {
+    position: relative;
+    width: 105%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .form-content {
@@ -149,8 +157,8 @@
 .planet {
     display: block;
     filter: drop-shadow(0 0 25px #1e2bc1);
-    width: 95%;
     margin: 0 auto;
+    width: 115%;
 }
 
 .group {
@@ -185,11 +193,14 @@ label {
     font-family: 'IBM Plex Mono';
     font-weight: 700;
     font-size: 1.5rem;
-    padding: 15px;
+    padding: 15px 30px;
     border-radius: 30px;
-    width: 20%;
+    width: auto;
+    min-width: 150px;
     box-shadow: 1px 4px 4px #1e2a3e;
     align-self: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .launch:hover {
@@ -203,66 +214,21 @@ label {
     box-shadow: 1px 6px 4px #1e2a3e;
 }
 
-/* iPad pro screens */
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+/* -------- responsive styles -------- */
+
+/* Large tablets, smaller desktops */
+@media screen and (min-width: 768px) and (max-width: 1366px) {
     .contact-content {
-        height: 80vh;
+        flex-direction: column;
         flex-direction: column-reverse;
-        gap: 10%;
-    }
-
-    .right-side {
-       transform: translateY(-5%);
-    }
-
-    .left-side {
-        transform: translateY(-40%);
-    }
-
-    .contact-icons img {
-        width: 90px;
         height: auto;
-    }
-  
-    .stars {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
-  .contact-content {
-    height: 90vh;
-  }
-  
-    .right-side {
-    margin-top: -5%;
-  }
-}
-
-/* iPad screens */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .contact-content {
-        height: 120vh;
-        flex-direction: column-reverse;
         gap: 10%;
-    }
-
-    .planet {
-        width: 87%;
-    }
-
-    .right-side {
-       transform: translateY(-5%);
-    }
-
-    .left-side {
-        transform: translateY(-40%);
+        height: 120vh;
     }
 
     .contact-icons img {
         width: 80px;
         height: auto;
-        margin-top: -20%;
     }
   
     .stars {
@@ -270,8 +236,8 @@ label {
     }
 
     input {
-        font-size: 1.3rem;
-        width: 300px;
+        font-size: 1rem;
+        width: 270px;
     }
 
     label {
@@ -281,38 +247,102 @@ label {
     .form-content {
         font-size: 2rem;
         margin-top: -6%;
-        margin-left: 10%;
+        margin-left: 0%;
     }
 
     .launch {
-       margin-left: 10%;
-       padding-left: 5px;
-       padding: 20px;
-       width: 130px;
+       width: auto;
+        min-width: 150px;
+        padding: 15px 30px;
+        margin-left: 0;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+
+    .planet {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+/* Small tablets and large phones */
+@media (max-width: 767px) {
+
+    .stars {
+        display: none;
+    }
+
     .contact-content {
-        height: 110vh;
+        flex-direction: column;
         flex-direction: column-reverse;
-        gap: 10%;
+        height: auto;
+        gap: 2rem;
+        height: 110vh;
     }
 
-    .right-side {
-       transform: translateY(-5%);
-    }
-
-    .left-side {
-        transform: translateY(-40%);
+    .contact-icons {
+        justify-content: center;
+        gap: 1rem;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .contact-icons img {
-        width: 90px;
+        height: 60px;
+        width: 60px;
+        padding: 15px;
+        margin: 2rem 0rem;
+    }
+
+    .planet {
+        width: 90%;
+        max-width: 100%;
         height: auto;
     }
-  
-    .stars {
-        display: none;
+
+    .contact-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        text-align: center;
+        z-index: 20;
+    }
+
+    .form-content {
+        font-size: 1.2rem;
+        gap: -15px;
+        margin-top: 8%;
+    }
+
+    input {
+        width: 90%;
+        font-size: 1rem;
+        padding: 15px;
+        margin-bottom: 1rem;
+    }
+
+    .launch {
+        width: 40%;
+        font-size: 1rem;
+        padding: 15px;
+        margin: 0 auto 1rem auto;
+        min-width: unset;
+    }
+
+    .group {
+        margin: 15px;
+        gap: 10px;
+    }
+
+    .name-group, .message-group {
+        margin-left: 0;
+    }
+
+    .contact-content h2 {
+        font-size: clamp(4.5rem, 6vw, 5rem);
+        margin-top: -30%;
     }
 }
