@@ -29,6 +29,7 @@ const ProjectDisplay = () => {
           "A web app where users trade, buy, and sell Pokémon in a dynamic marketplace with API-powered card data — built with Django, Node.js, Express, HTML, CSS, and the PokéAPI.",
         prototype: "",
         github: "https://github.com/tifpham021/PokeTrade.git",
+        launch: "https://tiffpham.pythonanywhere.com/",
       },
       {
         image: scrollytelly,
@@ -116,35 +117,41 @@ const ProjectDisplay = () => {
                   className="project-img"
                 />
               )}
-              <div className="descript-part">
-                <h1 className="project-title">{projects[currProject].title}</h1>
-                <h3 className="description">
-                  {projects[currProject].description}
-                </h3>
-                {projects[currProject].prototype && (
-                  <h4 className="prototype">
-                    Prototype:{" "}
-                    <a
-                      href={projects[currProject].prototype}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Here
-                    </a>
-                  </h4>
-                )}
-                {projects[currProject].github && (
-                  <h4 className="github">
-                    GitHub:{" "}
-                    <a
-                      href={projects[currProject].github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      View Repo
-                    </a>
-                  </h4>
-                )}
+              <div className="right-stuff">
+                <div className="descript-part">
+                  <h1 className="project-title">
+                    {projects[currProject].title}
+                  </h1>
+                  <h3 className="description">
+                    {projects[currProject].description}
+                  </h3>
+                </div>
+                <div className="links">
+                  {projects[currProject].prototype && (
+                    <h4 className="prototype">
+                      Prototype:{" "}
+                      <a
+                        href={projects[currProject].prototype}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Here
+                      </a>
+                    </h4>
+                  )}
+                  {projects[currProject].github && (
+                    <h4 className="github">
+                      GitHub:{" "}
+                      <a
+                        href={projects[currProject].github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Repo
+                      </a>
+                    </h4>
+                  )}
+                </div>
               </div>
             </div>
           </motion.div>
