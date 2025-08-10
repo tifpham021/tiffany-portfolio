@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tiffany-portfolio/static/css/main.35bf37ae.css",
+    "main.css": "/tiffany-portfolio/static/css/main.43896c3c.css",
     "main.js": "/tiffany-portfolio/static/js/main.960fe6c3.js",
     "static/js/453.95b4110a.chunk.js": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js",
     "static/media/poketrade.png": "/tiffany-portfolio/static/media/poketrade.90ae42e4d15fadab7d81.png",
@@ -28,12 +28,12 @@
     "static/media/bottom-left-outer.png": "/tiffany-portfolio/static/media/bottom-left-outer.6db59732221558806231.png",
     "static/media/bottom-star.png": "/tiffany-portfolio/static/media/bottom-star.983b74280898aaac28d0.png",
     "index.html": "/tiffany-portfolio/index.html",
-    "main.35bf37ae.css.map": "/tiffany-portfolio/static/css/main.35bf37ae.css.map",
+    "main.43896c3c.css.map": "/tiffany-portfolio/static/css/main.43896c3c.css.map",
     "main.960fe6c3.js.map": "/tiffany-portfolio/static/js/main.960fe6c3.js.map",
     "453.95b4110a.chunk.js.map": "/tiffany-portfolio/static/js/453.95b4110a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35bf37ae.css",
+    "static/css/main.43896c3c.css",
     "static/js/main.960fe6c3.js"
   ]
 }
