@@ -320,21 +320,20 @@ label {
         width: 100%;
         font-size: 1rem;
         padding: 15px;
+        box-sizing: border-box;
     }
 
-    .name-group {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
+    .name-group, .email-group, .message-group {
         justify-content: center;
+        width: 120%;
+        gap: 10px;
+        transform: translate(-10%, 0%);
     }
 
-    .name-input {
-        width: 200px;
-    }
-
+    .name-input,
     .email-input {
-        width: 300px;
+        width: 100%;
+        max-width: 600px;
     }
 
     .group {
@@ -342,9 +341,6 @@ label {
         gap: 10px;
     }
 
-    .name-group, .message-group {
-        margin-left: 0;
-    }
 
     .contact-content h2 {
         font-size: clamp(4.5rem, 6vw, 5rem);
