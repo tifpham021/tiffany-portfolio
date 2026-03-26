@@ -21,8 +21,7 @@ const ProjectDisplay = () => {
         prototype:
           "https://www.figma.com/design/RhAfAVCMiWdFTRW6OzdIue/Travel-Website-Project?m=dev&t=rgpdmOpGanz9wrHZ-1",
         github: "https://github.com/tifpham021/Nomadiq-Website.git",
-        launch:
-          "https://nomadiq-website-pwr6q9bgz-tiffanypham021-gmailcoms-projects.vercel.app/",
+        launch: "https://nomadiq-website.vercel.app/",
       },
       {
         image: poketrade,
